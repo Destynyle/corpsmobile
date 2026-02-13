@@ -1,7 +1,7 @@
 # Corps Mobile - Programme Calisthenics
 
 Application web mobile-first pour suivre un programme de calisthenics debutant:
-Push, Pull, Jambes/Core et Mobilite/Skills.
+Push, Pull, Jambes/Core, Mobilite/Skills et Flexibilite.
 
 Le projet est en HTML/CSS/JS natif, sans framework, et fonctionne offline une
 fois charge dans le navigateur.
@@ -15,7 +15,7 @@ fois charge dans le navigateur.
 
 ## Fonctionnalites
 
-- Onglets de seance: `Push`, `Pull`, `Jambes/Core`, `Mobilite`
+- Onglets de seance: `Push`, `Pull`, `Jambes/Core`, `Mobilite`, `Flexibilite`
 - Exercices avec schema SVG + details techniques
 - Timer de repos rapide (boutons presets + controle manuel)
 - Checklist "Aujourd'hui" par type de seance

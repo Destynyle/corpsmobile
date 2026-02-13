@@ -29,8 +29,8 @@
       <section class="card">
         <div class="hd">
           <div>
-            <h2>Le programme (4 jours / semaine)</h2>
-            <p>Choisis un jour : <span class="muted">Push / Pull / Jambes+Core / Mobilité+Skills</span>. Chaque exercice a son schéma + consignes.</p>
+            <h2>Le programme (4-5 jours / semaine)</h2>
+            <p>Choisis un jour : <span class="muted">Push / Pull / Jambes+Core / Mobilité+Skills / Flexibilité</span>. Chaque exercice a son schéma + consignes.</p>
           </div>
           <span class="badge"><span class="dot"></span> Offline + Mobile</span>
         </div>
@@ -40,6 +40,7 @@
           <button class="tabbtn" role="tab" aria-selected="false" aria-controls="panel-pull" id="tab-pull">🔵 Pull</button>
           <button class="tabbtn" role="tab" aria-selected="false" aria-controls="panel-legs" id="tab-legs">🟣 Jambes/Core</button>
           <button class="tabbtn" role="tab" aria-selected="false" aria-controls="panel-mob" id="tab-mob">🟠 Mobilité</button>
+          <button class="tabbtn" role="tab" aria-selected="false" aria-controls="panel-flex" id="tab-flex">🟡 Flexibilité</button>
         </div>
 
         <!-- PUSH -->
@@ -656,6 +657,147 @@
                     <li>Une jambe tendue : 6×8s</li>
                     <li>Deux jambes (L) : petits holds</li>
                   </ul>
+                </div>
+              </details>
+            </article>
+          </div>
+        </div>
+
+        <!-- FLEXIBILITY -->
+        <div class="bd panel" id="panel-flex" role="tabpanel" aria-labelledby="tab-flex">
+          <div class="row">
+            <span class="kbd"><span class="kbd2">Objectif</span> : gagner en amplitude (ischios, hanches, adducteurs, épaules)</span>
+            <span class="kbd">Durée : 20–35 min</span>
+            <button class="btn small primary" data-quicktimer="45">Timer 45s</button>
+            <button class="btn small" data-quicktimer="60">Timer 60s</button>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="subgrid">
+            <article class="exercise" data-ex-id="flex-ham">
+              <div class="exTop">
+                <div class="diagram" aria-label="Schéma étirement ischio-jambiers">
+                  <svg width="76" height="76" viewBox="0 0 76 76" fill="none" aria-hidden="true">
+                    <path d="M8 58 L68 58" stroke="rgba(122,162,255,.7)" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="24" cy="24" r="6" stroke="rgba(232,238,252,.9)" stroke-width="3"/>
+                    <path d="M30 26 L44 36 L56 36" stroke="rgba(232,238,252,.9)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M44 36 L36 52" stroke="rgba(102,227,196,.85)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M56 36 L60 52" stroke="rgba(232,238,252,.9)" stroke-width="3" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="exMeta">
+                  <h3>Ischio-jambiers (pike stretch)</h3>
+                  <div class="tags">
+                    <span class="tag"><strong>3</strong> séries</span>
+                    <span class="tag"><strong>45–60s</strong></span>
+                    <span class="tag">Respiration lente</span>
+                  </div>
+                </div>
+              </div>
+              <details>
+                <summary>Consignes <span class="chev">▾</span></summary>
+                <div class="exBody">
+                  <ul>
+                    <li>Dos long, bascule du bassin vers l’avant, genoux légèrement fléchis si besoin.</li>
+                    <li>Expire pour gagner quelques millimètres, sans forcer.</li>
+                  </ul>
+                  <div class="callout">Objectif: progression régulière, jamais de douleur vive.</div>
+                </div>
+              </details>
+            </article>
+
+            <article class="exercise" data-ex-id="flex-hip">
+              <div class="exTop">
+                <div class="diagram" aria-label="Schéma étirement fléchisseurs de hanche">
+                  <svg width="76" height="76" viewBox="0 0 76 76" fill="none" aria-hidden="true">
+                    <path d="M10 58 L66 58" stroke="rgba(122,162,255,.7)" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="28" cy="20" r="6" stroke="rgba(232,238,252,.9)" stroke-width="3"/>
+                    <path d="M28 26 L34 40" stroke="rgba(232,238,252,.9)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M34 40 L22 52" stroke="rgba(102,227,196,.85)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M34 40 L50 42 L58 54" stroke="rgba(232,238,252,.9)" stroke-width="3" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="exMeta">
+                  <h3>Fléchisseurs de hanche (couch stretch)</h3>
+                  <div class="tags">
+                    <span class="tag"><strong>2–3</strong> séries</span>
+                    <span class="tag"><strong>40–60s</strong> / jambe</span>
+                    <span class="tag">Bassin neutre</span>
+                  </div>
+                </div>
+              </div>
+              <details>
+                <summary>Consignes <span class="chev">▾</span></summary>
+                <div class="exBody">
+                  <ul>
+                    <li>Contracte légèrement le fessier arrière pour protéger le bas du dos.</li>
+                    <li>Reste grandit, évite de cambrer pour “tricher”.</li>
+                  </ul>
+                </div>
+              </details>
+            </article>
+
+            <article class="exercise" data-ex-id="flex-adduct">
+              <div class="exTop">
+                <div class="diagram" aria-label="Schéma adducteurs et ouverture hanches">
+                  <svg width="76" height="76" viewBox="0 0 76 76" fill="none" aria-hidden="true">
+                    <circle cx="38" cy="20" r="6" stroke="rgba(232,238,252,.9)" stroke-width="3"/>
+                    <path d="M38 26 L38 40" stroke="rgba(232,238,252,.9)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M38 40 L22 54" stroke="rgba(102,227,196,.85)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M38 40 L54 54" stroke="rgba(102,227,196,.85)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M8 58 L68 58" stroke="rgba(122,162,255,.7)" stroke-width="3" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="exMeta">
+                  <h3>Adducteurs (papillon / frog stretch)</h3>
+                  <div class="tags">
+                    <span class="tag"><strong>3</strong> séries</span>
+                    <span class="tag"><strong>45s</strong></span>
+                    <span class="tag">Ouverture hanche</span>
+                  </div>
+                </div>
+              </div>
+              <details>
+                <summary>Consignes <span class="chev">▾</span></summary>
+                <div class="exBody">
+                  <ul>
+                    <li>Place-toi en tension modérée (6-7/10), puis respire profondément.</li>
+                    <li>Alterne 45s statique + 5 petites contractions/relâchements.</li>
+                  </ul>
+                </div>
+              </details>
+            </article>
+
+            <article class="exercise" data-ex-id="flex-shoulder">
+              <div class="exTop">
+                <div class="diagram" aria-label="Schéma ouverture épaules et thorax">
+                  <svg width="76" height="76" viewBox="0 0 76 76" fill="none" aria-hidden="true">
+                    <circle cx="38" cy="18" r="6" stroke="rgba(232,238,252,.9)" stroke-width="3"/>
+                    <path d="M38 24 L38 42" stroke="rgba(232,238,252,.9)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M38 30 C26 24, 20 34, 24 44" stroke="rgba(102,227,196,.85)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M38 30 C50 24, 56 34, 52 44" stroke="rgba(102,227,196,.85)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M30 46 L24 58" stroke="rgba(232,238,252,.9)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M46 46 L52 58" stroke="rgba(232,238,252,.9)" stroke-width="3" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="exMeta">
+                  <h3>Épaules/Thorax (ouverture)</h3>
+                  <div class="tags">
+                    <span class="tag"><strong>2–3</strong> séries</span>
+                    <span class="tag"><strong>45–60s</strong></span>
+                    <span class="tag">Posture</span>
+                  </div>
+                </div>
+              </div>
+              <details>
+                <summary>Consignes <span class="chev">▾</span></summary>
+                <div class="exBody">
+                  <ul>
+                    <li>Étirement pectoraux contre un mur ou cadre de porte.</li>
+                    <li>Ajoute 5 respirations lentes en fin d’amplitude.</li>
+                  </ul>
+                  <div class="callout">Termine par 1 à 2 minutes de respiration calme pour relâcher.</div>
                 </div>
               </details>
             </article>

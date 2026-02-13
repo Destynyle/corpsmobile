@@ -85,17 +85,19 @@
     // Tabs
     // --------------------------
     const tabBtns = Array.from(document.querySelectorAll(".tabbtn"));
-    const panels = {
-      "tab-push": document.getElementById("panel-push"),
-      "tab-pull": document.getElementById("panel-pull"),
-      "tab-legs": document.getElementById("panel-legs"),
-      "tab-mob":  document.getElementById("panel-mob"),
-    };
+    const panels = tabBtns.reduce((acc, btn) => {
+      const panelId = btn.getAttribute("aria-controls");
+      const panel = panelId ? document.getElementById(panelId) : null;
+      if(panel) acc[btn.id] = panel;
+      return acc;
+    }, {});
 
     function setActiveTab(btn){
+      const panel = panels[btn.id];
+      if(!panel) return;
       tabBtns.forEach(b => b.setAttribute("aria-selected", String(b === btn)));
       Object.values(panels).forEach(p => p.classList.remove("active"));
-      panels[btn.id].classList.add("active");
+      panel.classList.add("active");
 
       // Update today checklist based on tab
       buildTodayList(btn.id);

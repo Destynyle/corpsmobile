@@ -29,6 +29,13 @@ window.CC_CONFIG = {
       { id: "ankles", title: "Chevilles 3 min", desc: "Genou au mur 2×10 / jambe" },
       { id: "wrists", title: "Poignets 3–5 min", desc: "Préparation planche" },
       { id: "skills", title: "Skills 10–15 min", desc: "Planche mur 6×10–20s + L-sit 6×8–15s" }
+    ],
+    "tab-flex": [
+      { id: "warm", title: "Échauffement doux 3 min", desc: "Respiration + mobilisations articulaires lentes" },
+      { id: "ham", title: "Ischio-jambiers 3×45–60s", desc: "Pike stretch, sans douleur vive" },
+      { id: "hip", title: "Fléchisseurs hanche 2–3×40–60s", desc: "Couch stretch, bassin neutre" },
+      { id: "adduct", title: "Adducteurs 3×45s", desc: "Papillon ou frog stretch" },
+      { id: "calm", title: "Retour au calme 2 min", desc: "Respiration lente + relâchement" }
     ]
   },
   goals: [
