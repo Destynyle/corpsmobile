@@ -2,8 +2,10 @@
     // Helpers (storage)
     // --------------------------
     const config = window.CC_CONFIG || {};
-    const KEY = config.key || "cc_calisthenics_v1";
-    const WEEKLY_GOAL = Number(config.weeklyGoal) || 4;
+    const KEY = config.key || "cc_calisthenics_v2";
+    const WEEKLY_GOAL = Number(config.weeklyGoal) || 5;
+    const TIMER_DEFAULT_HINT = config.timerDefaultHint || "60–120s repos • 45–90s étirements";
+    const SESSION_DONE_MESSAGE = config.sessionDoneMessage || "Séance validée ✅";
     const checklistByTab = config.checklistByTab || {};
     const goals = Array.isArray(config.goals) ? config.goals : [];
     const todayISO = () => new Date().toISOString().slice(0,10);
@@ -176,7 +178,7 @@
     });
     btnMinus.addEventListener("click", () => { timerSeconds = Math.max(0, timerSeconds - 10); renderTimer(); });
     btnPlus.addEventListener("click",  () => { timerSeconds = timerSeconds + 10; renderTimer(); });
-    btnReset.addEventListener("click", () => { stopTimer(); timerSeconds = 0; renderTimer(); timerHint.textContent="Choisis 60–120s selon l’exercice."; });
+    btnReset.addEventListener("click", () => { stopTimer(); timerSeconds = 0; renderTimer(); timerHint.textContent = TIMER_DEFAULT_HINT; });
 
     document.querySelectorAll("[data-quicktimer]").forEach(b=>{
       b.addEventListener("click", ()=>{
@@ -318,7 +320,7 @@
       // Feedback
       if(navigator.vibrate) navigator.vibrate([60,40,60]);
       updateStatsUI();
-      alert("Séance validée ✅ (même courte, c’est gagné)");
+      alert(SESSION_DONE_MESSAGE);
     });
 
     document.getElementById("resetAll").addEventListener("click", ()=>{
